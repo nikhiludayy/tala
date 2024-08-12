@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "attila";
+    src: url(/tala/attila.ttf);
+}
+@font-face {
+    font-family: "dancingscript";
+    src: url(/tala/DancingScript-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "attila";
+    color: #dadada;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #d6d3d3;
+}
+
+#main {
+    /* width: 100%;
+    height: 100%; */
+    position: relative;
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+#main #nav {
+    
+    width: 100vw;
+    height: 12vh;
+    /* margin-top: 10px; */
+    padding: 0px 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vw;
+    letter-spacing: 4px;
+    position: absolute;
+    z-index: 99;
+
+}
+
+#main #nav #nav-part1 {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    /* background: #000; */
+}
+
+#main #nav #nav-part1 #ic i {
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+#main #nav #nav-part1 .ri-menu-line {
+    display: block;
+}
+
+#main #nav #nav-part1 .ri-arrow-up-line {
+    display: none;
+}
+
+#main #nav h3 {
+    transition: all ease 1s;
+}
+
+#main #nav h4 {
+    transition: all ease 1s;
+}
+
+#main #full-scr-nav {
+    position: absolute;
+    top:-100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dadada;
+    color: blue;
+    padding: 100px;
+    z-index: 98;
+    transition: all ease 0.9s;
+
+}
+
+#main #full-scr-nav h2 {
+    color: #222;
+    font-size: 10vw;
+    transition: all ease 0.9s;
+}
+
+#main #full-scr-nav p {
+    max-width: 70vw;
+    color: #222;
+    font-size: 2vw;
+    transition: all ease 0.9s;
+}
+
+
+#main #page1 {
+    width: 100vw;
+    min-height: 85vh;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+#main #page1 h1 {
+
+    position:absolute;
+    top: 20%;
+    letter-spacing: 1vw;
+    font-size: 12vw;
+    left:12%;
+}
+#main #page1 h2 {
+
+    position:absolute;
+    top: 50%;
+    letter-spacing: .1vw;
+    font-size: 2vw;
+    left: 30%;
+    width: 22%;
+}
+#main #page1 h3 {
+
+    position:absolute;
+    top: 40%;
+    letter-spacing: .1vw;
+    font-size: .8vw;
+    left: 70%;
+    width: 10%;
+}
+
+#main #page2{
+    /* overflow: hidden; */
+    /* background: #000; */
+    width: 100vw;
+    min-height: 100vh;
+
+}
+#main #page2 img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0) scale(0.9);
+    width: 100%;
+
+}
+#main #page2 #h11{
+    margin-top: 20vh;
+}
+#main #page2 h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80vw;
+    font-size: 4vw;
+}
+#main #page2 h1 span{
+    font-family: "dancingscript";
+}
+
+#main #page3{
+    width: 100vw;
+    min-height: 100vh;
+
+}
