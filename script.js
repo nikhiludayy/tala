@@ -1,7 +1,9 @@
-var menu = document.querySelector("#ic ");
+
+
+var menu = document.querySelector("#ic");
 var fulscr = document.querySelector("#full-scr-nav");
 var flag = 0;
-menu.addEventListener("click", function () {
+function menudrg() {
 
     if (flag == 0) {
         fulscr.style.top = "0%";
@@ -25,8 +27,18 @@ menu.addEventListener("click", function () {
 
     }
 
-})
-
+}
+menu.addEventListener("click",menudrg);
+function menudr(){
+    // console.log("DONE");
+    fulscr.style.top = "-100%";
+    document.querySelector("#nav h3").style.color = "#dadada";
+    document.querySelector("#nav h4").style.color = "#dadada";
+    document.querySelector("#nav i").style.color = "#dadada";
+    document.querySelector("#nav .ri-menu-line").style.color = "#dadada";
+    document.querySelector("#nav .ri-menu-line").style.display = "block";
+    document.querySelector("#nav .ri-arrow-up-line").style.display = "none";
+    flag = 0;}
 var tl = gsap.timeline();
 tl.from("#page1 h1", {
     y: 60,
@@ -52,7 +64,7 @@ gsap.to("#page2 img", {
     scale: 1,
     scrollTrigger: {
         trigger: "#page2 img",
-        scroller: "body",
+        scroller: "#main",
         // markers:true,
         start: "top 70%",
         end: "top 0%",
@@ -60,17 +72,32 @@ gsap.to("#page2 img", {
     }
 })
 gsap.to("#nav ", {
-
+    
     fontSize: "1vw",
     scrollTrigger: {
         trigger: "#page1 h1",
-        scroller: "body",
+        scroller: "#main",
         // markers: true,
         start: "top 20%",
         end: "top 0%",
         scrub: .1
     }
 })
+gsap.to("#full-scr-nav", {
+    
+    top:"0%",
+    scrollTrigger: {
+        trigger: "#page1 h1",
+        scroller: "#main",
+        // markers: true,
+        start: "top 20%",
+        end: "top 0%",
+        scrub:.1,
+               
+    },
+    onComplete:menudr
+})
+
 
 gsap.to("#page2 h1", {
     duration: 1,
@@ -78,7 +105,7 @@ gsap.to("#page2 h1", {
     rotateX: 0,
     scrollTrigger: {
         trigger: "#h11",
-        scroller: "body",
+        scroller: "#main",
         // markers:true,
         start: "top 75%",
         end: "top 35%",
@@ -102,7 +129,7 @@ slide1h1.forEach(function(elem){
             duration:4,
             scrollTrigger:{
                 trigger: "#page6 ",
-                scroller:"body",
+                scroller:"#main",
 
                 scrub:10
 
@@ -120,7 +147,7 @@ slide2h1.forEach(function(elem){
             duration:4,
             scrollTrigger:{
                 trigger: "#page6 ",
-                scroller:"body",
+                scroller:"#main",
 
                 scrub:10
 

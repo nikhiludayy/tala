@@ -31,8 +31,8 @@ body {
     overflow-x: hidden;
 }
 
-#main #nav {
-
+#nav {
+    
     width: 100vw;
     height: 12vh;
     /* margin-top: 10px; */
@@ -43,11 +43,11 @@ body {
     font-size: 2vw;
     letter-spacing: 4px;
     position: fixed;
-    z-index: 99;
+    z-index: 999;
 
 }
 
-#main #nav #nav-part1 {
+#nav #nav-part1 {
     display: flex;
     gap: 50px;
     align-items: center;
@@ -55,28 +55,28 @@ body {
     /* background: #000; */
 }
 
-#main #nav #nav-part1 #ic i {
+ #nav #nav-part1 #ic i {
     cursor: pointer;
     transition: all ease 1s;
 }
 
-#main #nav #nav-part1 .ri-menu-line {
+ #nav #nav-part1 .ri-menu-line {
     display: block;
 }
 
-#main #nav #nav-part1 .ri-arrow-up-line {
+ #nav #nav-part1 .ri-arrow-up-line {
     display: none;
 }
 
-#main #nav h3 {
+ #nav h3 {
     transition: all ease 1s;
 }
 
-#main #nav h4 {
+ #nav h4 {
     transition: all ease 1s;
 }
 
-#main #full-scr-nav {
+ #full-scr-nav {
     position: absolute;
     top: -100vh;
     display: flex;
@@ -92,13 +92,13 @@ body {
 
 }
 
-#main #full-scr-nav h2 {
+ #full-scr-nav h2 {
     color: #222;
     font-size: 10vw;
     transition: all ease 0.9s;
 }
 
-#main #full-scr-nav p {
+ #full-scr-nav p {
     max-width: 70vw;
     color: #222;
     font-size: 2vw;
@@ -108,7 +108,7 @@ body {
 
 #main #page1 {
     width: 100vw;
-    min-height: 85vh;
+    min-height: 100vh;
     /* overflow: hidden; */
     position: relative;
 }
